@@ -42,7 +42,7 @@ Agradecemos las contribuciones de la comunidad para mejorar este proyecto. Si de
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulte el archivo [LICENSE](LICENSE) para obtener más detalles.
+Este proyecto está bajo la Licencia GNU General Public License v3.0. Consulte el archivo [LICENSE](LICENSE) para obtener más detalles.
 
 ¡Gracias por visitar nuestro repositorio!
 
