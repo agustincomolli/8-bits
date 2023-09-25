@@ -46,4 +46,4 @@ Este proyecto está bajo la Licencia GNU General Public License v3.0. Consulte e
 
 ¡Gracias por visitar nuestro repositorio!
 
-![8-bits]<img src="logo.png" height=80px>
+<img src="logo.png" height=80px>
