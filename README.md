@@ -46,4 +46,4 @@ Este proyecto está bajo la Licencia GNU General Public License v3.0. Consulte e
 
 ¡Gracias por visitar nuestro repositorio!
 
-<img src="./assets/images/logo.png" height=80px>
+<img src="./assets/images/logo.webp" height=80px>

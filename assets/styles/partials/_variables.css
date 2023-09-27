@@ -1,0 +1,49 @@
+/* Importar las fuentes */
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto"),
+    url("../../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../../fonts/Roboto-Regular.woff") format("woff"),
+    url("../../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src:
+    local("Roboto Bold"),
+    url("../../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../../fonts/Roboto-Bold.woff") format("woff"),
+    url("../../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat"),
+    url("../../fonts/Montserrat.woff2") format("woff2"),
+    url("../../fonts/Montserrat.woff") format("woff"),
+    url("../../fonts/Montserrat.ttf") format("truetype");
+}
+
+/* Variables */
+:root {
+  /* Fuentes:
+     Para calcular el tamaño en rem dividir el tamaño en px por 16
+  */
+
+  /* Encabezados */
+  --font-header-1: normal normal bold 1.75rem/1.4rem "Roboto Bold", "Roboto", sans-serif;
+  /*                                    |       |-> Altura de la línea */
+  /*                                    |-> Tamaño de la fuente */
+  --font-header-2: normal normal normal 1.75rem/1.4rem "Roboto Bold", "Roboto", sans-serif;
+  --font-header-3: normal normal normal 2.125rem/1.4rem "Roboto Bold", "Roboto", sans-serif;
+  --font-header-4: normal normal bold 1.75rem/1.4rem "Roboto Bold", "Roboto", sans-serif;
+  --font-header-5: normal normal bold 1.375rem/1.4rem "Roboto Bold", "Roboto", sans-serif;
+  --font-header-6: normal normal normal 1.1875rem/1.4rem "Roboto Bold", "Roboto", sans-serif;
+
+  /* Párrafos */
+  --font-paragraph-1: normal normal normal 1rem/1.4rem "Montserrat", sans-serif;
+  --font-paragraph-2: normal normal normal 0.875rem/1.4rem "Montserrat", sans-serif;
+  --font-paragraph-3: normal normal normal 0.8125rem/1.4rem "Montserrat", sans-serif;
+}

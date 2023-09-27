@@ -1,0 +1,11 @@
+/* Borrar los formatos predeterminados del navegador */
+@import url("./partials/normalize.css");
+/* Variables de colores, fuentes, etc. */
+@import url("./partials/_variables.css");
+/* Estilos generales */
+@import url("./partials/_general.css");
+/* Estilos para el header */
+@import url("./partials/_header.css");
+/* Estilos para el footer */
+@import url("./partials/_footer.css");
+
