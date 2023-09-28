@@ -6,6 +6,8 @@
 @import url("./partials/_general.css");
 /* Estilos para el header */
 @import url("./partials/_header.css");
+/* Estilos para el main */
+@import url("./partials/_main.css");
 /* Estilos para el footer */
 @import url("./partials/_footer.css");
 

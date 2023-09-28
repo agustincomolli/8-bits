@@ -1,0 +1,24 @@
+body {
+  color: var(--color-base-dark);
+  background-color: var(--color-base-light);
+  font: var(--font-paragraph-1);
+  /* Mantener el footer en la parte inferior */
+  display: flex;
+  flex-direction: column;
+  /* Esto garantiza que el cuerpo ocupe al menos el alto completo de la ventana */
+  min-height: 100vh; 
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  font: var(--font-header-1);
+}
+
+.slogan {
+  font: var(--font-paragraph-2);
+  /* min-width: 9.375rem; */
+}

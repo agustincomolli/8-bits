@@ -1,0 +1,4 @@
+main {
+  /* El contenido del main ocupará todo el espacio disponible */
+  flex: 1;
+}

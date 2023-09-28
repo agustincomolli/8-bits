@@ -6,28 +6,49 @@
   <title>8-bits | Tu aliado informático</title>
   <!-- Icono -->
   <link rel="shortcut icon" href="./assets/icons/favicon.webp" type="image/x-icon">
+  <!-- CDN de Font Awesome -->
+  <script src="https://kit.fontawesome.com/3e8f04180d.js" crossorigin="anonymous"></script>
   <!-- Estilos -->
   <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-  
+
   <header>
     <!-- Logotipo -->
     <div class="logo">
       <img class="logo-image" src="./assets/images/logo.webp" alt="Logo">
-      <h1 class="brand">8-bits</h1>
-      <p class="slogan">Tu aliado informático</p>
+      <div class="logo-text">
+        <span class="brand">8-bits</span>
+        <span class="slogan">Tu aliado informático</span>
+      </div>
     </div>
     <!-- Barra de navegación -->
     <nav class="nav-bar">
       <ul class="nav-bar-list">
-        <li class="nav-bar-item" title="Página principal">Inicio</li>
-        <li class="nav-bar-item" title="Nuestra historia">Acerca de</li>
-        <li class="nav-bar-item" title="Nuestros servicios informáticos">Servicios</li>
-        <li class="nav-bar-item" title="Nuestros planes de mantenimiento">Planes</li>
-        <li class="nav-bar-item" title="Ponte en contacto con nosotros" >Contacto</li>
+        <li class="nav-bar-item nav-bar-item-active" title="Página principal">
+          Inicio
+        </li>
+        <li class="nav-bar-item" title="Nuestra historia">
+          <a href="./pages/about.html">Acerca de</a>
+        </li>
+        <li class="nav-bar-item" title="Nuestros servicios informáticos">
+          <a href="./pages/services.html">Servicios</a>
+        </li>
+        <li class="nav-bar-item" title="Nuestros planes de mantenimiento">
+          <a href="./pages/plans.html">Planes</a>
+        </li>
+        <li class="nav-bar-item" title="Ponte en contacto con nosotros">
+          <a href="./pages/contact.html">Contacto</a>
+        </li>
       </ul>
     </nav>
+    <!-- Menú hamburguesa -->
+    <div class="hamburger-menu">
+      <img src="./assets/images/hamburger-menu-icon.svg" alt="">
+    </div>
+    <div class="hamburger-close">
+      <img src="./assets/images/hamburger-close-icon.svg" alt="">
+    </div>
   </header>
 
   <main>
@@ -35,11 +56,24 @@
   </main>
 
   <footer>
-    <span class="brand">8-bits</span>
-    <span class="slogan">Tu aliado informático</span>
+    <div class="logo-text">
+      <span class="brand">8-bits</span>
+      <span class="slogan">Tu aliado informático</span>
+    </div>
+    <div class="social-networks">
+      <a href="https://www.facebook.com/agustincomolli">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/agustincomolli">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/agustincomolli/">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
     <p class="phone">Tel: 02220 - 860065</p>
     <p class="webmaker">© 2023 - Creado por Agustín Comolli</p>
   </footer>
-  
+
 </body>
 </html>

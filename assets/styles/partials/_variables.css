@@ -46,4 +46,24 @@
   --font-paragraph-1: normal normal normal 1rem/1.4rem "Montserrat", sans-serif;
   --font-paragraph-2: normal normal normal 0.875rem/1.4rem "Montserrat", sans-serif;
   --font-paragraph-3: normal normal normal 0.8125rem/1.4rem "Montserrat", sans-serif;
+
+  /* Menú */
+  --font-menu: normal normal 600 0.875rem/1.4rem "Roboto", "Roboto", sans-serif;
+
+  /* Colores */
+ 
+  /* Colores base */
+  --color-base-light: #f3f3f3;
+  --color-base-dark: #383838;
+  
+  /* Colores de sombra */
+  --color-shadow-light: #d6d6d6;
+  --color-shadow-medium: #aaa8a8;
+  --color-shadow-dark: #717070;
+
+  /* Colores de énfasis */
+  --color-emphasis-1: #caf7b1;
+  --color-emphasis-2: #b1e690;
+  --color-emphasis-3: #96d16f;
+  --color-emphasis-4: #719d53;
 }
