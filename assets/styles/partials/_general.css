@@ -6,7 +6,12 @@ body {
   display: flex;
   flex-direction: column;
   /* Esto garantiza que el cuerpo ocupe al menos el alto completo de la ventana */
-  min-height: 100vh; 
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+
 }
 
 .logo-text {

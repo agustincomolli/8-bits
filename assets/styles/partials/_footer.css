@@ -1,0 +1,62 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-base-dark);
+  color: var(--color-base-light);
+  padding: 1.5rem 5% 1rem;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.company-info .logo-text {
+  align-items: center;
+}
+
+.company-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-networks a {
+  color: var(--color-base-light);
+  font-size: 1.55rem;
+  margin-right: .5rem;
+}
+
+.phone {
+  font: var(--font-header-5);
+}
+
+.webmaker {
+  font: var(--font-paragraph-2);
+}
+
+@media screen and (min-width:824px) {
+  footer {
+    align-items: normal;
+    gap: 1.5rem;
+  }
+
+  .company-info {
+    flex-direction: row;
+  }
+
+  .company-contact {
+    align-items: start;
+    padding-right: 3.5rem;
+  }
+
+  .webmaker {
+    align-self: end;
+  }
+}
