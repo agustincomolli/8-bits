@@ -33,7 +33,7 @@ header {
 
 @media(min-width:824px) {
   header {
-    padding: 1rem 5%;
+    padding: 1rem 10%;
   }
 
   .nav-bar {

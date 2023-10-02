@@ -5,7 +5,7 @@ footer {
   gap: 1rem;
   background-color: var(--color-base-dark);
   color: var(--color-base-light);
-  padding: 1.5rem 5% 1rem;
+  padding: 1rem 0;
 }
 
 .company-info {
@@ -16,7 +16,7 @@ footer {
   justify-content: space-between;
 }
 
-.company-info .logo-text {
+.logo-text {
   align-items: center;
 }
 
@@ -43,12 +43,17 @@ footer {
 
 @media screen and (min-width:824px) {
   footer {
+    padding: 1rem 10%;
     align-items: normal;
     gap: 1.5rem;
   }
 
   .company-info {
     flex-direction: row;
+  }
+
+  .logo-text {
+    align-items: start;
   }
 
   .company-contact {

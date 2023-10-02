@@ -11,3 +11,5 @@
 /* Estilos para el footer */
 @import url("./partials/_footer.css");
 
+/* Estilos propios para el index.html */
+@import url("./partials/_index.css");
