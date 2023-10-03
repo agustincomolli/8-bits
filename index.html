@@ -28,17 +28,17 @@
         <li class="nav-bar-item nav-bar-item-active" title="Página principal">
           Inicio
         </li>
-        <li class="nav-bar-item" title="Nuestra historia">
-          <a href="./pages/about.html">Acerca de</a>
+        <li title="Nuestra historia">
+          <a class="nav-bar-item" href="./pages/about.html">Acerca de</a>
         </li>
-        <li class="nav-bar-item" title="Nuestros servicios informáticos">
-          <a href="./pages/services.html">Servicios</a>
+        <li title="Nuestros servicios informáticos">
+          <a class="nav-bar-item" href="./pages/services.html">Servicios</a>
         </li>
-        <li class="nav-bar-item" title="Nuestros planes de mantenimiento">
-          <a href="./pages/plans.html">Planes</a>
+        <li title="Nuestros planes de mantenimiento">
+          <a class="nav-bar-item" href="./pages/plans.html">Planes</a>
         </li>
-        <li class="nav-bar-item" title="Ponte en contacto con nosotros">
-          <a href="./pages/contact.html">Contacto</a>
+        <li title="Ponte en contacto con nosotros">
+          <a class="nav-bar-item" href="./pages/contact.html">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -94,9 +94,50 @@
             <img src="./assets/icons/mail.svg" alt="">
             <h5>Contrate a un experto hoy mismo</h5>
           </div>
+          <form class="form-get-quote" action="">
+            <input class="input" type="text" name="client-name" id="client-name" placeholder="Nombre" required maxlength="100">
+            <input class="input" type="email" name="client-mail" id="client-mail" placeholder="Email" required maxlength="250">
+            <textarea class="message" name="client-message" id="client-message" placeholder="Mensaje" required rows="5"></textarea>
+            <input class="send-quote" type="submit" value="Enviar">
+          </form>
         </article>
       </div>
       <p class="read-more"><a href="./pages/about.html">Leer más...</a></p>
+    </section>
+
+    <section class="our-services">
+      <article class="services">
+        <div class="content-title">
+          Soporte Técnico único
+        </div>
+        <div class="services-title">
+          <img src="./assets/icons/light-bulb.svg" alt="">
+          <span>Servicios</span>
+        </div>
+        <div class="services-list-col-1">
+          <ul>
+            <li>Networking - Hogar y negocios</li>
+            <li>Soporte e instalación de PC</li>
+            <li>Copia de seguridad</li>
+            <li>Recuperación de datos</li>
+            <li>Soporte remoto</li>
+            <li>Soporte para Smart Phones</li>
+          </ul>
+        </div>
+        <div class="services-list-col-2">
+          <ul>
+            <li>Reparación de PC</li>
+            <li>Consultoría</li>
+            <li>Soluciones de TI</li>
+            <li>Formación</li>
+            <li>Seguridad de internet</li>
+          </ul>
+        </div>
+        <p><a href="./pages/services.html">Más...</a></p>
+      </article>
+      <aside>
+        <img class="services-guy" src="./assets/images/it-guy.webp" alt="Hombre de soporte TI">
+      </aside>
     </section>
   </main>
 

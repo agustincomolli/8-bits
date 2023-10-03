@@ -5,6 +5,7 @@ body {
   /* Mantener el footer en la parte inferior */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* Esto garantiza que el cuerpo ocupe al menos el alto completo de la ventana */
   min-height: 100vh;
 }
