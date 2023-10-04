@@ -13,3 +13,6 @@
 
 /* Estilos propios para el index.html */
 @import url("./partials/_index.css");
+
+/* Estilos para el char de WhatsApp */
+@import url("./partials/_whatsapp.css");
