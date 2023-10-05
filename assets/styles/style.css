@@ -8,11 +8,10 @@
 @import url("./partials/_header.css");
 /* Estilos para el main */
 @import url("./partials/_main.css");
+/* Estilos para el chat de WhatsApp */
+@import url("./partials/_whatsapp.css");
 /* Estilos para el footer */
 @import url("./partials/_footer.css");
 
 /* Estilos propios para el index.html */
 @import url("./partials/_index.css");
-
-/* Estilos para el char de WhatsApp */
-@import url("./partials/_whatsapp.css");
