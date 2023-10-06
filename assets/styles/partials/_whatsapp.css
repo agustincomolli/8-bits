@@ -5,7 +5,7 @@
   align-items: center;
   position: fixed;
   bottom: 8%;
-  right: 8%;
+  right: 5%;
   gap: .2rem;
 }
 
@@ -32,6 +32,11 @@
 
 
 @media(min-width:824px) {
+  .whatsapp-wrapper {
+    bottom: 10%;
+    right: 87px;
+  }
+
   .chat-me {
     display: none;
     height: 64px;
@@ -46,7 +51,7 @@
   }
 
   .whatsapp-wrapper:hover {
-    right: 5.25%;
+    right: 50px;
   }
 
   .whatsapp-btn img {

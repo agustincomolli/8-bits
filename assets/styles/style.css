@@ -1,5 +1,5 @@
 /* Borrar los formatos predeterminados del navegador */
-@import url("./partials/normalize.css");
+@import url("./normalize.css");
 /* Variables de colores, fuentes, etc. */
 @import url("./partials/_variables.css");
 /* Estilos generales */
@@ -15,3 +15,8 @@
 
 /* Estilos propios para el index.html */
 @import url("./partials/_index.css");
+/* Estilos propios para about.html */
+@import url("./partials/_about.css");
+
+/* Estilos para animaciones */
+@import url("./animate.css");

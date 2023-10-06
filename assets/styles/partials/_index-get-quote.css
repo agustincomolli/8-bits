@@ -1,0 +1,97 @@
+.get-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+
+.about-title img {
+  height: 2.5rem;
+}
+
+.about-title h5 {
+  font: var(--font-header-5);
+}
+
+.about-title p {
+  font: var(--font-paragraph-2);
+}
+
+.form-get-quote {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.input,
+.message {
+  border: var(--color-shadow-medium) 1px solid;
+  max-width: 100%;
+  font: var(--font-paragraph-2);
+  padding: .2rem .2rem .2rem 0.75rem;
+}
+
+.input:hover,
+.message:hover {
+  border-width: 2px;
+}
+
+.message {
+  /* Si escriben más, mostrar la barra de scroll */
+  overflow: auto;
+  resize: none;
+}
+
+.send-quote {
+  background-color: var(--color-emphasis-3);
+  border-style: solid var(--color-emphasis-3);
+  cursor: pointer;
+  transition: var(--trans1, border-color .4s ease 0s, background-color .4s ease 0s);
+  align-self: end;
+  padding: .4rem 2.5rem;
+  width: max-content;
+}
+
+.send-quote:hover {
+  background-color: var(--color-emphasis-1);
+}
+
+
+@media(min-width:824px) {
+  .get-quote {
+    padding: 1rem;
+    margin: 0;
+    gap: 1rem;
+    width: 97%;
+    align-items: center;
+  }
+
+  .quote-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .about {
+    width: 55%;
+  }
+
+  .quote {
+    width: 45%;
+  }
+}

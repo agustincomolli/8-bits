@@ -1,0 +1,11 @@
+.section-main-image {
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  max-width: 100%;
+}
+
+@media(min-width:824px) {
+}
