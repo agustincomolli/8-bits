@@ -17,6 +17,8 @@
 @import url("./partials/_index.css");
 /* Estilos propios para about.html */
 @import url("./partials/_about.css");
+/* Estilos propios para contact.html */
+@import url("./partials/_contact.css");
 
 /* Estilos para animaciones */
 @import url("./animate.css");

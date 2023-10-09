@@ -57,7 +57,7 @@
   resize: none;
 }
 
-.send-quote {
+.send-btn {
   background-color: var(--color-emphasis-3);
   border-style: solid var(--color-emphasis-3);
   cursor: pointer;
@@ -67,7 +67,7 @@
   width: max-content;
 }
 
-.send-quote:hover {
+.send-btn:hover {
   background-color: var(--color-emphasis-1);
 }
 
