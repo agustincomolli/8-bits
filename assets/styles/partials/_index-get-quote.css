@@ -74,17 +74,16 @@
 
 @media(min-width:824px) {
   .get-quote {
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: 0;
     gap: 1rem;
-    width: 97%;
     align-items: center;
   }
 
   .quote-container {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .about {

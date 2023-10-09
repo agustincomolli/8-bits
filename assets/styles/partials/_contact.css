@@ -29,18 +29,33 @@
 }
 
 @media(min-width:824px) {
+  #main-contact {
+    padding: 0 10%;
+  }
+
+  .contact-title {
+    margin-block: 1.5rem;
+  }
+
   .contact-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: .5rem;
+    grid-template-columns: 184px 1fr 40%;
+    gap: 2rem;
+    margin-top: 1rem;
   }
 
   .address {
     grid-column: 1;
+    font: var(--font-paragraph-2);
   }
 
   .form-contact {
     grid-column: 2;
+  }
+
+
+  .form-contact .send-btn {
+    margin-top: 1rem;
   }
 
   .map-wrapper {
