@@ -21,15 +21,49 @@ header {
 
 .nav-bar {
   display: none;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100vh;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  align-items: center;
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline:0;
+  padding-top: 4rem;
+  gap: 3rem;
+}
+
+.nav-bar.active {
+  display: flex;
 }
 
 .hamburger-menu {
   display: block;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.hamburger-menu.menu-active {
+  display: none;
 }
 
 .hamburger-close {
   display: none;
+  cursor: pointer;
+  margin-right: 1rem;
 }
+
+.hamburger-close.active {
+  display: block;
+}
+
 
 @media(min-width:824px) {
   header {
@@ -38,6 +72,9 @@ header {
 
   .nav-bar {
     display: flex;
+    flex-direction: row;
+    position: initial;
+    height: auto;
     font: var(--font-menu);
     padding: 0;
   }
@@ -45,6 +82,10 @@ header {
   .nav-bar-list {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    padding-inline-start: 40px;
+    align-items: normal;
     gap: .5rem;
   }
 
