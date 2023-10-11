@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .logo {
@@ -25,23 +25,30 @@ header {
   background-color: #fff;
   height: 100vh;
   position: absolute;
-  top: 80px;
+  top: 85px;
   left: 0;
   right: 0;
+  z-index: 999;
   align-items: center;
+  font: var(--font-paragraph-1);
 }
 
 .nav-bar-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding-inline:0;
+  align-items: center;
+  padding-inline: 0;
   padding-top: 4rem;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .nav-bar.active {
   display: flex;
+}
+
+.nav-bar-item-active a {
+  color: var(--color-emphasis-3);
 }
 
 .hamburger-menu {
@@ -64,19 +71,28 @@ header {
   display: block;
 }
 
+.hamburger-menu img,
+.hamburger-close img {
+  height: 32px;
+}
+
 
 @media(min-width:824px) {
   header {
+    display: flex;
+    flex-direction: row;
     padding: 1rem 10%;
   }
 
   .nav-bar {
+    margin-left: 1rem;
     display: flex;
     flex-direction: row;
     position: initial;
     height: auto;
     font: var(--font-menu);
     padding: 0;
+    background-color: transparent;
   }
 
   .nav-bar-list {
@@ -84,7 +100,6 @@ header {
     display: flex;
     flex-direction: row;
     padding-top: 0;
-    padding-inline-start: 40px;
     align-items: normal;
     gap: .5rem;
   }
@@ -95,19 +110,17 @@ header {
     width: 6.5rem;
     text-align: center;
     transition: background-color 0.5s ease 0s;
+    color: var(--color-base-dark);
   }
-
-  .nav-bar-item-active {
+  
+  .nav-bar-item-active a {
     background-color: var(--color-emphasis-3);
+    color: var(--color-base-dark);
   }
 
   .nav-bar-item:hover {
     cursor: pointer;
     background-color: var(--color-emphasis-3);
-  }
-
-  nav ul li a {
-    color: var(--color-base-dark);
   }
 
   .logo-image {
