@@ -46,9 +46,10 @@
   --font-paragraph-1: normal normal normal 1rem/1.4rem "Montserrat", sans-serif;
   --font-paragraph-2: normal normal normal 0.875rem/1.4rem "Montserrat", sans-serif;
   --font-paragraph-3: normal normal normal 0.8125rem/1.4rem "Montserrat", sans-serif;
-
+  
   /* Menú */
   --font-menu: normal normal 600 0.875rem/1.4rem "Roboto", "Roboto", sans-serif;
+  --font-menu-vertical: normal normal normal 1.2rem/1.4rem "Montserrat", sans-serif;
 
   /* Colores */
  

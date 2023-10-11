@@ -30,7 +30,7 @@ header {
   right: 0;
   z-index: 999;
   align-items: center;
-  font: var(--font-paragraph-1);
+  font: var(--font-menu-vertical);
 }
 
 .nav-bar-list {
@@ -41,6 +41,10 @@ header {
   padding-inline: 0;
   padding-top: 4rem;
   gap: 2rem;
+}
+
+.nav-bar-item {
+  color: var(--color-base-dark);
 }
 
 .nav-bar.active {
@@ -110,7 +114,6 @@ header {
     width: 6.5rem;
     text-align: center;
     transition: background-color 0.5s ease 0s;
-    color: var(--color-base-dark);
   }
   
   .nav-bar-item-active a {
