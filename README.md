@@ -25,6 +25,24 @@ Utilizamos la metodología ágil Scrum para gestionar el desarrollo de este proy
 
 5. **Contacto**: Proporcionamos información de contacto para que los clientes se comuniquen con nosotros, ya sea por correo electrónico, teléfono o a través de un formulario en línea.
 
+## Características Adicionales
+
+- El sitio cuenta con una animación en el logotipo de la página `index.html`.
+- Ofrecemos una animación de apertura y cierre del menú hamburguesa en el modo responsive.
+- También hemos incluido transiciones al pasar el mouse por los elementos del menú en el modo escritorio.
+
+## Inspiración
+
+Nuestro proyecto se inspiró en los siguientes sitios web:
+
+- [OpenService MX](https://openservice.mx/soporte-tecnico-de-ti/)
+- [Soporte ENTI](https://soporteenti.com/)
+- [Visión Tecnológica](https://visiontecnologica.com.ar/soporte-tecnico-para-pymes/)
+- [IOnet](https://www.ionet.cl/servicios-informaticos)
+- [IT Systems](https://it-systems.com.co/soporte-tecnico-ti-corporativo/)
+- [Calsistem](https://www.calsistem.com.ar/soporte-tecnico-informatico.php)
+- [ITA Tech](https://ita.tech/soporte-tecnico-para-empresas)
+
 ## Instrucciones de Ejecución
 
 Si desea ejecutar este proyecto localmente en su máquina, siga estos pasos:
