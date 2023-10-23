@@ -51,6 +51,11 @@
   --font-menu: normal normal 600 0.875rem/1.4rem "Roboto", "Roboto", sans-serif;
   --font-menu-vertical: normal normal normal 1.2rem/1.4rem "Montserrat", sans-serif;
 
+  /* Otros */
+  --font-plans-subtitle: normal normal normal 1.75rem/1.4em "Montserrat",sans-serif;
+  --font-plan-title: normal normal normal 1.25rem/1.4em "Montserrat",sans-serif;
+  --font-plan-price: normal normal normal 4rem/1.4em "Montserrat",sans-serif;
+
   /* Colores */
  
   /* Colores base */
