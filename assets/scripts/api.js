@@ -9,6 +9,38 @@ function getProvinces() {
         .catch(error => console.log(error)); // Maneja errores de la solicitud.
 }
 
+
+function getCities(province) {
+    return fetch(`https://apis.datos.gob.ar/georef/api/municipios?provincia=${province}&max=200`)
+        .then(response => response.json())
+        .catch(error => console.log(error));
+}
+
+
+function fillCities(cities) {
+    const citiesSelector = document.querySelector("#cities");
+    citiesSelector.innerHTML = "";
+    for (let city of cities) {
+        const optionCity = document.createElement("option");
+        optionCity.text = city.nombre;
+        citiesSelector.appendChild(optionCity);
+    };
+    citiesSelector.value = "Cañuelas";
+};
+
+
+async function changeProvince() {
+    let provinceSelected = provincesSelector.selectedOptions[0].text;
+    const infoCities = await getCities(provinceSelected);
+
+    if (infoCities.municipios.length > 0) {
+        let cities = infoCities.municipios;
+        cities.sort((a, b) => a.nombre.localeCompare(b.nombre));
+        fillCities(cities);
+    };
+};
+
+
 /**
  * Llena un elemento select en el documento con opciones que representan las provincias de Argentina.
  */
