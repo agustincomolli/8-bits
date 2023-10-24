@@ -1,5 +1,8 @@
 main {
   padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .plans-titles {
@@ -25,15 +28,19 @@ main {
 .cards-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .card {
   border: var(--color-shadow-medium) 1px solid;
+  max-width: 300px;
 }
 
 .info,
 .more-info {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +48,16 @@ main {
   margin: 0;
   text-align: center;
   padding: 1.875rem;
+}
+
+.info {
+  height: 256px;
+  padding-bottom: 1.25rem;
+}
+
+.more-info {
+  max-height: 300px;
+  padding-top: 1.25rem;
 }
 
 .plan {
@@ -51,15 +68,29 @@ main {
 
 .price {
   font: var(--font-plan-price);
+  line-height: 1.2;
 }
 
 .price sup {
   margin-right: 6px;
   font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.subscription-time,
+.valid-time {
+  font: var(--font-plan-time);
+  line-height: 1;
+}
+
+.description {
+  font: var(--font-plan-description);
+  line-height: 20px;
+  padding: 12px 0;
 }
 
 .more-info {
-  border-top: var(--color-shadow-medium) 1px solid;
+  border-top: var(--color-shadow-medium) 1px dashed;
 }
 
 .plan-details {
@@ -69,7 +100,14 @@ main {
 
 .plan-details-item {
   padding-bottom: calc(1.5rem / 2);
+  font: var(--font-plan-description);
 }
+
+.support-area {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
 
 @media(min-width:824px) {
   .plans-titles {
@@ -87,5 +125,12 @@ main {
 
   .cards-wrapper {
     flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .more-info {
+    justify-content: start;
+    min-height: 300px;
   }
 }

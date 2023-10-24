@@ -24,6 +24,17 @@
   gap: .5rem;
 }
 
+#contact-province {
+  padding-left: .5rem;
+}
+
+#contact-province option {
+  white-space: nowrap; /* Evita el salto de línea de texto largo */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Muestra puntos suspensivos para el texto que se desborda */
+  max-width: 100%; /* Limita el ancho máximo de las opciones */
+}
+
 .map {
   border: 0;
   min-height: 200px;
@@ -39,8 +50,9 @@
   }
 
   .contact-wrapper {
+    width: 100%;
     display: grid;
-    grid-template-columns: 184px 1fr 40%;
+    grid-template-columns: 184px 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
   }

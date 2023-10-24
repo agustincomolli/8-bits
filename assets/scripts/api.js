@@ -13,7 +13,7 @@ function getProvinces() {
  * Llena un elemento select en el documento con opciones que representan las provincias de Argentina.
  */
 async function fillProvincesSelector() {
-    const provincesSelector = document.querySelector("#provinces");
+    const provincesSelector = document.querySelector("#contact-province");
     const infoProvinces = await getProvinces();
 
     if (infoProvinces.provincias.length > 0) {
@@ -25,9 +25,15 @@ async function fillProvincesSelector() {
         // Crea opciones para cada provincia y las agrega al elemento select.
         for (let province of provinces) {
             const optionProvince = document.createElement("option");
+            // Truncar el nombre de la provincia si es muy largo.
+            if (province.nombre.length > 31) {
+                province.nombre = province.nombre.substring(0, 30) + "...";
+            }
             optionProvince.text = province.nombre;
             provincesSelector.appendChild(optionProvince);
         };
     };
 };
 
+
+fillProvincesSelector();

@@ -46,22 +46,24 @@
   --font-paragraph-1: normal normal normal 1rem/1.4rem "Montserrat", sans-serif;
   --font-paragraph-2: normal normal normal 0.875rem/1.4rem "Montserrat", sans-serif;
   --font-paragraph-3: normal normal normal 0.8125rem/1.4rem "Montserrat", sans-serif;
-  
+
   /* Menú */
   --font-menu: normal normal 600 0.875rem/1.4rem "Roboto", "Roboto", sans-serif;
   --font-menu-vertical: normal normal normal 1.2rem/1.4rem "Montserrat", sans-serif;
 
   /* Otros */
-  --font-plans-subtitle: normal normal normal 1.75rem/1.4em "Montserrat",sans-serif;
-  --font-plan-title: normal normal normal 1.25rem/1.4em "Montserrat",sans-serif;
-  --font-plan-price: normal normal normal 4rem/1.4em "Montserrat",sans-serif;
+  --font-plans-subtitle: normal normal normal 1.75rem/1.4em "Montserrat", sans-serif;
+  --font-plan-title: normal normal normal 1.25rem/1.4em "Montserrat", sans-serif;
+  --font-plan-price: normal normal normal 3.75rem/1.4em "Montserrat", sans-serif;
+  --font-plan-time: normal normal normal .75rem/1.4em "Montserrat", sans-serif;
+  --font-plan-description: normal normal normal .875rem/1.4em "Montserrat", sans-serif;
 
   /* Colores */
- 
+
   /* Colores base */
   --color-base-light: #f3f3f3;
   --color-base-dark: #383838;
-  
+
   /* Colores de sombra */
   --color-shadow-light: #d6d6d6;
   --color-shadow-medium: #aaa8a8;
