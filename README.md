@@ -67,7 +67,7 @@ Si desea ejecutar este proyecto localmente en su máquina, siga estos pasos:
 
 1. Clone el repositorio a su computadora:
 
-git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
 
 
 2. Abra el archivo `index.html` en su navegador web para acceder a la página principal.
