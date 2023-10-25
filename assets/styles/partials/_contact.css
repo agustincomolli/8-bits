@@ -28,11 +28,8 @@
   padding-left: .5rem;
 }
 
-#contact-province option {
-  white-space: nowrap; /* Evita el salto de línea de texto largo */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Muestra puntos suspensivos para el texto que se desborda */
-  max-width: 100%; /* Limita el ancho máximo de las opciones */
+#contact-province option:disabled {
+  background-color: var(--color-base-light);
 }
 
 .map {

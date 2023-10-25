@@ -1,3 +1,6 @@
+const provincesSelector = document.querySelector("#contact-province");
+
+
 /**
  * Realiza una solicitud a la API de geolocalización para obtener información sobre las provincias de Argentina.
  *
@@ -10,42 +13,71 @@ function getProvinces() {
 }
 
 
+/**
+ * Función que realiza una solicitud HTTP para obtener las ciudades de una provincia
+ * a través de una API de datos gubernamentales.
+ * @param {string} province - El nombre de la provincia de la que se desean obtener las ciudades.
+ * @returns {Promise} - Una promesa que resuelve a un objeto JSON con información de las ciudades.
+ */
 function getCities(province) {
     return fetch(`https://apis.datos.gob.ar/georef/api/municipios?provincia=${province}&max=200`)
         .then(response => response.json())
         .catch(error => console.log(error));
 }
 
-
+/**
+ * Función que llena un selector HTML con opciones de ciudades.
+ * @param {Array} cities - Un array de objetos que representan las ciudades a agregar al selector.
+ */
 function fillCities(cities) {
-    const citiesSelector = document.querySelector("#cities");
+    const citiesSelector = document.querySelector("#contact-city");
     citiesSelector.innerHTML = "";
     for (let city of cities) {
         const optionCity = document.createElement("option");
         optionCity.text = city.nombre;
         citiesSelector.appendChild(optionCity);
     };
-    citiesSelector.value = "Cañuelas";
-};
 
+    // Si la provincia seleccionada es "Buenos Aires," se selecciona automáticamente la ciudad "Cañuelas."
+    if (provincesSelector.value == "Buenos Aires") {
+        citiesSelector.value = "Cañuelas";
+    } else {
+        // Si la provincia no es "Buenos Aires," se agrega una opción predeterminada "Ciudad."
+        const optionDefault = document.createElement("option");
+        optionDefault.text = "Ciudad";
+        optionDefault.setAttribute("disabled", "");
+        optionDefault.setAttribute("selected", "");
+        optionDefault.setAttribute("hidden", "");
+        citiesSelector.appendChild(optionDefault);
+    };
+}
 
+/**
+ * Función asincrónica que se ejecuta cuando se cambia la provincia seleccionada.
+ * Obtiene las ciudades de la provincia y las muestra en el selector de ciudades.
+ */
 async function changeProvince() {
-    let provinceSelected = provincesSelector.selectedOptions[0].text;
+    // Obtiene el nombre de la provincia seleccionada en el selector de provincias.
+    const provinceSelected = provincesSelector.selectedOptions[0].text;
+
+    // Realiza una solicitud asincrónica para obtener la información de las ciudades de la provincia.
     const infoCities = await getCities(provinceSelected);
 
+    // Si se obtienen ciudades, se ordenan alfabéticamente y se llenan en el selector de ciudades.
     if (infoCities.municipios.length > 0) {
         let cities = infoCities.municipios;
         cities.sort((a, b) => a.nombre.localeCompare(b.nombre));
         fillCities(cities);
     };
-};
+}
 
 
 /**
  * Llena un elemento select en el documento con opciones que representan las provincias de Argentina.
  */
-async function fillProvincesSelector() {
-    const provincesSelector = document.querySelector("#contact-province");
+async function fillProvincesSelector(provincesSelector) {
+    // const provincesSelector = document.querySelector("#contact-province");
+    const citiesSelector = document.querySelector("#contact-city");
     const infoProvinces = await getProvinces();
 
     if (infoProvinces.provincias.length > 0) {
@@ -64,8 +96,14 @@ async function fillProvincesSelector() {
             optionProvince.text = province.nombre;
             provincesSelector.appendChild(optionProvince);
         };
+        // Habilitar el selector de ciudades.
+        citiesSelector.removeAttribute("disabled");
+        // Establecer la provincia predeterminada.
+        provincesSelector.value = "Buenos Aires";
+        changeProvince();
     };
 };
 
 
-fillProvincesSelector();
+provincesSelector.addEventListener("change", changeProvince);
+fillProvincesSelector(provincesSelector);

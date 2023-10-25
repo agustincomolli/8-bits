@@ -43,6 +43,24 @@ Nuestro proyecto se inspiró en los siguientes sitios web:
 - [Calsistem](https://www.calsistem.com.ar/soporte-tecnico-informatico.php)
 - [ITA Tech](https://ita.tech/soporte-tecnico-para-empresas)
 
+## Uso de la API de Geolocalización
+
+Este proyecto utiliza la API de Geolocalización del Gobierno de Argentina para obtener información sobre las provincias y ciudades del país. La API proporciona datos geográficos precisos y actualizados que son fundamentales para la funcionalidad de la aplicación.
+
+### Recursos de la API
+
+- **Provincias**: La API permite obtener una lista de todas las provincias de Argentina.
+
+- **Ciudades**: A partir de una provincia seleccionada, la API proporciona información detallada sobre las ciudades de esa provincia.
+
+### Cómo se integra la API
+
+El código fuente del proyecto incluye funciones que realizan solicitudes HTTP a la API de Geolocalización para obtener datos sobre las provincias y ciudades. Estos datos se utilizan para llenar los selectores de provincias y ciudades en la interfaz de usuario.
+
+### Documentación de la API
+
+Para obtener más información sobre la API de Geolocalización y sus capacidades, consulte la documentación oficial en el siguiente enlace: [Documentación de la API de Geolocalización](https://apis.datos.gob.ar/georef/).
+
 ## Instrucciones de Ejecución
 
 Si desea ejecutar este proyecto localmente en su máquina, siga estos pasos:
