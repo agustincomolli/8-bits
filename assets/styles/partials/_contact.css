@@ -24,11 +24,13 @@
   gap: .5rem;
 }
 
-#contact-province {
+#contact-province,
+#contact-city {
   padding-left: .5rem;
 }
 
-#contact-province option:disabled {
+#contact-province option:disabled,
+#contact-city option:disabled {
   background-color: var(--color-base-light);
 }
 
