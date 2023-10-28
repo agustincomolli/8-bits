@@ -15,6 +15,12 @@ a {
 
 }
 
+p,
+li {
+  font: var(--font-paragraph-2);
+  color: var(--color-base-dark);
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;

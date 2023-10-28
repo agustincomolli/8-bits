@@ -1,4 +1,4 @@
-main {
+.plan-wrapper {
   padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,7 @@ main {
 
 @media(min-width:824px) {
   .plans-titles {
-    padding: 2.5rem 1rem;
+    padding: 1rem 1rem;
   }
 
   .plans-titles h2 {
