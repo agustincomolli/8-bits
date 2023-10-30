@@ -1,5 +1,4 @@
-// import CustomAlert from "../scripts/custom-alert";
-
+const formContact = document.querySelector("#form-contact");
 // Obtener el elemento de entrada de número de teléfono.
 const contactPhone = document.querySelector("#contact-phone");
 
@@ -84,34 +83,52 @@ function validatePhone() {
 }
 
 
+/**
+ * Maneja el envío del formulario de contacto.
+ *
+ * @param {Event} event - El evento de envío del formulario.
+ */
 async function submitForm(event) {
-    // Prevenir el envío del formulario.
+    // Prevenir el envío del formulario para evitar una recarga de página.
     event.preventDefault();
+
+    // Validar el número de teléfono.
     validatePhone();
 
+    // Obtener los datos del formulario.
     const dataContact = new FormData(this);
-    const myAlert = new CustomAlert();
+
+    // Inicializar variables para el título y el mensaje de la alerta.
+    let alertTitle = "";
+    let alertMessage = "";
+
+    // Enviar los datos del formulario al servidor de manera asíncrona.
     const response = await fetch(this.action, {
         method: this.method,
         body: dataContact,
         headers: {
             "Accept": "application/json"
         }
-    })
+    });
+
+    // Verificar si la respuesta del servidor es exitosa (código de respuesta 200).
     if (response.ok) {
+        // Restablecer el formulario después de un envío exitoso.
         this.reset();
-        myAlert.title = "Su mensaje ha sido enviado exitosamente";
-        myAlert.message = "¡Gracias por contactarte con nosotros 😀!<br> Pronto nos comunicaremos con usted.";
+        alertTitle = "Su mensaje ha sido enviado exitosamente";
+        alertMessage = "¡Gracias por contactarte con nosotros 😀!<br> Pronto nos comunicaremos con usted.";
     } else {
-        myAlert.title = "Su mensaje no pudo enviarse";
-        myAlert.message = "¡Ups! Hubo un problema al enviar su formulario 😥";
+        alertTitle = "Su mensaje no pudo enviarse";
+        alertMessage = "¡Ups! Hubo un problema al enviar su formulario 😥";
     }
+
+    // Crear y mostrar una alerta personalizada con los mensajes.
+    const myAlert = new CustomAlert(alertTitle, alertMessage);
     myAlert.showAlert();
-};
+}
 
-const formContact = document.querySelector("#form-contact");
 
-formContact.addEventListener("submit", handleSubmit);
+formContact.addEventListener("submit", submitForm);
 // Establece un listener para el evento "change" en el elemento contactPhone
 // y restablece la validez personalizada del campo, lo que permite que el usuario
 // corrija y vuelva a validar el campo después de realizar cambios.
@@ -119,15 +136,6 @@ contactPhone.addEventListener("change", () => {
     contactPhone.setCustomValidity("");
 });
 
-
-function handleSubmit(event) {
-    event.preventDefault();
-    // const myAlert = new CustomAlert();
-    // myAlert.title = "Su mensaje ha sido enviado exitosamente";
-    // myAlert.message = "¡Gracias por contactarte con nosotros 😀!<br> Pronto nos comunicaremos con usted.";
-    // myAlert.showAlert();
-    alert("hola")
-  }
 
 
 /* 
