@@ -61,7 +61,8 @@
         <span>info@8-bits.com.ar</span>
       </div>
       <div class="form-wrapper">
-        <form class="form-contact" action="">
+        <!-- https://formspree.io/f/myyqoqvl -->
+        <form class="form-contact" id="form-contact" action="" method="post">
           <input class="input" type="text" name="contact-name" id="contact-name" placeholder="Nombre" required
             maxlength="100">
           <input class="input" type="email" name="contact-mail" id="contact-mail" placeholder="Email" required
@@ -77,7 +78,7 @@
             maxlength="100">
           <textarea class="message" name="contact-message" id="contact-message" placeholder="Mensaje" required
             rows="5"></textarea>
-          <input class="send-btn" type="submit" value="Enviar">
+          <input class="send-btn" id="send-btn" type="submit" value="Enviar">
         </form>
       </div>
       <div class="map-wrapper">
@@ -125,5 +126,7 @@
   <!-- Scripts -->
   <script src="../assets/scripts/hamburger-menu.js"></script>
   <script src="../assets/scripts/api.js"></script>
+  <script type="module" src="../assets/scripts/custom-alert.js"></script>
+  <script src="../assets/scripts/form-contact.js"></script>
 </body>
 </html>

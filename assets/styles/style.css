@@ -24,3 +24,5 @@
 
 /* Estilos para animaciones */
 @import url("./animate.css");
+/* Estilos para alertas personalizadas */
+@import url("./partials/_custom-alert.css");
