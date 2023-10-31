@@ -1,5 +1,5 @@
 /* Estilos responsive */
-.section-about {
+.service-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,56 +7,32 @@
   gap: 1rem;
 }
 
-.title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  margin-top: 1rem;
-}
-
-.our-story img {
-  height: 32px;
-}
-
-.our-story h2 {
+.service-intro-description h2 {
   font: var(--font-header-2);
   margin-block-start: 0;
 }
 
-.our-story h3{
-  font: var(--font-header-6);
-  margin-block: 0;
-}
-
-.our-story p {
+.service-intro-description p,
+.service-intro-description li {
   font: var(--font-paragraph-3);
   margin-block-start: .2rem;
 }
 
-.hire {
+.service-intro-hire {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hire-geek {
-  position: relative;
-  bottom: 1rem;
-  font: var(--font-paragraph-3);
-  background-color: var(--color-emphasis-3);
-  padding: .5rem;
-}
-
-
 /* Estilos para pantalla grande */
 @media(min-width:824px) {
-  .section-about {
+  .service-intro {
     flex-direction: row;
     align-items: start;
     gap: 3%;
   }
 
-  .our-story {
+  .service-intro-description {
     min-width: 65%;
   }
 }

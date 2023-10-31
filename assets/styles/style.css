@@ -21,6 +21,8 @@
 @import url("./partials/_contact.css");
 /* Estilos propios para plans.html */
 @import url("./partials/_plans.css");
+/* Estilos propios para services.html */
+@import url("./partials/_services.css");
 
 /* Estilos para animaciones */
 @import url("./animate.css");

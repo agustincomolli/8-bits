@@ -18,6 +18,7 @@
 }
 
 .alert-box {
+  margin: auto 3%;
   background-color: var(--color-base-light);
   border: 1px solid var(--color-shadow-medium);
   border-radius: 5px;
@@ -36,6 +37,7 @@
 
 .alert-message {
   font: var(--font-paragraph-2);
+  margin-bottom: 1.5rem;
 }
 
 /* .alert-button-ok {
