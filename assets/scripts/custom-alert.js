@@ -26,7 +26,7 @@ class CustomAlert {
         this.alertDiv.className = "custom-alert hidden-alert";
         this.alertContent = `
             <div class="alert-box">
-                <span class="close-alert" id="close-alert">&times;</span>
+                <span class="close-alert" id="close-alert" title="Cerrar">&times;</span>
                 <h2 class="alert-title">${this.#title}</h2>
                 <p class="alert-message">${this.#message}</p>
                 <button class="alert-button-ok send-btn" id="alert-button-ok">Aceptar</button>

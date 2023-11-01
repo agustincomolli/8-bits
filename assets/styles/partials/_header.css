@@ -19,6 +19,10 @@ header {
   border-radius: 50%;
 }
 
+.logo-text {
+  align-items: start;
+}
+
 .nav-bar {
   display: none;
   flex-direction: column;

@@ -1,3 +1,4 @@
+/* Estilos responsive */
 .contact-wrapper {
   display: flex;
   flex-direction: column;
@@ -39,11 +40,9 @@
   min-height: 200px;
 }
 
-@media(min-width:824px) {
-  #main-contact {
-    padding: 0 10%;
-  }
 
+/* Estilos para pantalla grande */
+@media(min-width:824px) {
   .contact-title {
     margin-block: 1.5rem;
   }
@@ -51,7 +50,7 @@
   .contact-wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(184px, 300px) 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
   }

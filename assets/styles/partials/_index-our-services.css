@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.services {
+.our-services-wrapper {
   background-color: var(--color-emphasis-3);
   display: grid;
   grid-template-areas:
@@ -71,7 +71,7 @@
     align-items: start;
   }
 
-  .services {
+  .our-services-wrapper {
     width: 60%;
   }
 
