@@ -1,6 +1,21 @@
 # 8-bits - Trabajo práctico Codo a Codo
 
-Este repositorio contiene el código fuente para el sitio web de una empresa de soporte técnico en computadoras que se llama 8-bits. Nuestra empresa se especializa en brindar soluciones informáticas de alta calidad a nuestros clientes.
+Este es el repositorio del proyecto para el desarrollo del sitio web de 8-bits, una empresa especializada en brindar soporte técnico integral en computadoras.
+
+## Productos y Servicios
+
+Nuestro sitio web proveerá información detallada acerca de los productos y servicios únicos que ofrece 8-bits. Estos incluyen pero no se limitan a:
+
+1. Soporte técnico y mantenimiento de sistemas.
+2. Soluciones de problemas de software y hardware.
+3. Configuración de redes y seguridad de datos.
+4. Diversos planes de abono flexibles para la manutención continua de nuestros clientes.
+
+Además, nuestra página de contacto proporciona un fácil acceso a los usuarios para enviar consultas. También incluimos la dirección física de la empresa, junto con un mapa interactivo.
+
+## Nuestro público objetivo
+
+Nuestro sitio web está diseñado principalmente para atender a empresas y personas individuales que buscan soporte técnico en computadoras. Es un recurso valioso tanto para quienes necesitan asistencia instantánea con problemas de TI, como para aquellos que buscan una solución a largo plazo para mantener sus sistemas operando sin problemas. Nos esforzamos por proporcionar un servicio de primera calidad que satisface las necesidades de nuestros clientes y supera sus expectativas.
 
 ## Tecnologías Utilizadas
 
