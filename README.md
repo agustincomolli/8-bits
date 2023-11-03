@@ -21,7 +21,8 @@ Nuestro sitio web está diseñado principalmente para atender a empresas y perso
 
 En esta sección, te presentamos algunos mockups de nuestro proyecto para ofrecerte una visión más realista de cómo se verá nuestro sitio web al completarlo. 
 
-![Index Mockup](./mockups/8-bits-index.webp)
+<!-- ![Index Mockup](./mockups/8-bits-index.webp) -->
+<img src="./mockups/8-bits-index.webp" width="600">
 
 Esta imagen representa cómo se verá la página inicial de 8-bits en una pantalla de escritorio; se puede observar el diseño general, la distribución de los elementos y la elección de los colores.
 
@@ -45,6 +46,8 @@ Estas representaciones nos permiten anticipar cómo se verán y se sentirán las
 ## Proceso de Desarrollo
 
 Utilizamos la metodología ágil Scrum para gestionar el desarrollo de este proyecto. Durante el proceso de diseño y planificación, utilizamos Excalidraw para crear bocetos y mockups que nos ayudaron a visualizar y definir la apariencia y la estructura del sitio web.
+
+Para ver los wireframes, detalles de diseño incluyendo paletas de colores y fuentes, te invitamos a visitar nuestro [Detalles de Diseño](./design-details.md).
 
 ## Páginas del Sitio
 
