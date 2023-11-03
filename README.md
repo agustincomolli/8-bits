@@ -17,6 +17,24 @@ Además, nuestra página de contacto proporciona un fácil acceso a los usuarios
 
 Nuestro sitio web está diseñado principalmente para atender a empresas y personas individuales que buscan soporte técnico en computadoras. Es un recurso valioso tanto para quienes necesitan asistencia instantánea con problemas de TI, como para aquellos que buscan una solución a largo plazo para mantener sus sistemas operando sin problemas. Nos esforzamos por proporcionar un servicio de primera calidad que satisface las necesidades de nuestros clientes y supera sus expectativas.
 
+## Mockups
+
+En esta sección, te presentamos algunos mockups de nuestro proyecto para ofrecerte una visión más realista de cómo se verá nuestro sitio web al completarlo. 
+
+![Index Mockup](./mockups/8-bits-index.webp)
+
+Esta imagen representa cómo se verá la página inicial de 8-bits en una pantalla de escritorio; se puede observar el diseño general, la distribución de los elementos y la elección de los colores.
+
+![Phone Mockup](./mockups/8-bits-phone.webp)
+
+Esta muestra cómo será nuestra página vista desde un dispositivo móvil; el diseño responsivo garantiza que el contenido se muestre correctamente en pantallas de diferentes tamaños.
+
+![Services Mockup](./mockups/8-bits-services.webp)
+
+Por último, este mockup exhibe la página de servicios en donde se detallan las soluciones y trabajos que ofrecemos; una presentación clara y ordenada que facilita al usuario encontrar lo que necesita.
+
+Estas representaciones nos permiten anticipar cómo se verán y se sentirán las diversas funciones y componentes de nuestro sitio, y nos ayudan a realizar ajustes antes de codificar las características en sí.
+
 ## Tecnologías Utilizadas
 
 - HTML
