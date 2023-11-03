@@ -22,17 +22,20 @@ Nuestro sitio web está diseñado principalmente para atender a empresas y perso
 En esta sección, te presentamos algunos mockups de nuestro proyecto para ofrecerte una visión más realista de cómo se verá nuestro sitio web al completarlo. 
 
 <!-- ![Index Mockup](./mockups/8-bits-index.webp) -->
-<img src="./mockups/8-bits-index.webp" width="600">
+<img src="./mockups/8-bits-index.webp" width="800">
 
-Esta imagen representa cómo se verá la página inicial de 8-bits en una pantalla de escritorio; se puede observar el diseño general, la distribución de los elementos y la elección de los colores.
+☝🏻 Esta imagen representa cómo se verá la página inicial de 8-bits en una pantalla de escritorio; se puede observar el diseño general, la distribución de los elementos y la elección de los colores.
 
-![Phone Mockup](./mockups/8-bits-phone.webp)
+<!-- ![Phone Mockup](./mockups/8-bits-phone.webp) -->
+<img src="./mockups/8-bits-phone.webp" width="800">
 
-Esta muestra cómo será nuestra página vista desde un dispositivo móvil; el diseño responsivo garantiza que el contenido se muestre correctamente en pantallas de diferentes tamaños.
+☝🏻 Esta muestra cómo será nuestra página vista desde un dispositivo móvil; el diseño responsivo garantiza que el contenido se muestre correctamente en pantallas de diferentes tamaños.
 
-![Services Mockup](./mockups/8-bits-services.webp)
+<!-- ![Services Mockup](./mockups/8-bits-services.webp) -->
+<img src="./mockups/8-bits-services.webp" width="800">
 
-Por último, este mockup exhibe la página de servicios en donde se detallan las soluciones y trabajos que ofrecemos; una presentación clara y ordenada que facilita al usuario encontrar lo que necesita.
+
+☝🏻 Por último, este mockup exhibe la página de servicios en donde se detallan las soluciones y trabajos que ofrecemos; una presentación clara y ordenada que facilita al usuario encontrar lo que necesita.
 
 Estas representaciones nos permiten anticipar cómo se verán y se sentirán las diversas funciones y componentes de nuestro sitio, y nos ayudan a realizar ajustes antes de codificar las características en sí.
 
