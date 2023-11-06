@@ -54,11 +54,11 @@
   padding: 0;
 }
 
-.more-services {
+.more-services,
+.read-more {
   grid-area: grid-more-services;
   text-align: right;
   padding: 0 8%;
-  color: var(--color-base-dark);
   font: var(--font-paragraph-3);
 }
 
