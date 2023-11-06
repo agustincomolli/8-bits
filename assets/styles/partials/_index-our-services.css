@@ -60,6 +60,8 @@
   text-align: right;
   padding: 0 8%;
   font: var(--font-paragraph-3);
+  /* Poner el texto en mayúsculas */
+  text-transform: uppercase;
 }
 
 .services-guy {
