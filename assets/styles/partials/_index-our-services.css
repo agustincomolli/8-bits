@@ -58,6 +58,8 @@
   grid-area: grid-more-services;
   text-align: right;
   padding: 0 8%;
+  color: var(--color-base-dark);
+  font: var(--font-paragraph-3);
 }
 
 .services-guy {
