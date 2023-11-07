@@ -25,7 +25,7 @@ class CustomAlert {
         this.alertDiv.id = "custom-alert";
         this.alertDiv.className = "custom-alert hidden-alert";
         this.alertContent = `
-            <div class="alert-box">
+            <div class="alert-box animate__animated animate__backInDown">
                 <span class="close-alert" id="close-alert" title="Cerrar">&times;</span>
                 <h2 class="alert-title">${this.#title}</h2>
                 <p class="alert-message">${this.#message}</p>

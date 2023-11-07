@@ -4,14 +4,14 @@ Este es el repositorio del proyecto para el desarrollo del sitio web de 8-bits, 
 
 ## Productos y Servicios
 
-Nuestro sitio web proveerá información detallada acerca de los productos y servicios únicos que ofrece 8-bits. Estos incluyen pero no se limitan a:
+El sitio web proveerá información detallada acerca de los productos y servicios únicos que ofrece 8-bits. Estos incluyen pero no se limitan a:
 
 1. Soporte técnico y mantenimiento de sistemas.
 2. Soluciones de problemas de software y hardware.
 3. Configuración de redes y seguridad de datos.
 4. Diversos planes de abono flexibles para la manutención continua de nuestros clientes.
 
-Además, nuestra página de contacto proporciona un fácil acceso a los usuarios para enviar consultas. También incluimos la dirección física de la empresa, junto con un mapa interactivo.
+Además, la página de contacto proporciona un fácil acceso a los usuarios para enviar consultas. También incluimos la dirección física de la empresa, junto con un mapa interactivo.
 
 ## Nuestro público objetivo
 
@@ -72,7 +72,9 @@ Para ver los wireframes, detalles de diseño incluyendo paletas de colores y fue
 
 ## Inspiración
 
-Nuestro proyecto se inspiró en los siguientes sitios web:
+El proyecto coge como inspiración primaria la [plantilla de CMS Wix](https://www.wix.com/website-template/view/html/1677) para su diseño. Aunque la estructura, los estilos, las fuentes y los colores reflejan la estética de la plantilla, el sitio fue codificado desde cero e incorpora una serie de funcionalidades únicas.
+
+También se inspiró en los siguientes sitios web:
 
 - [OpenService MX](https://openservice.mx/soporte-tecnico-de-ti/)
 - [Soporte ENTI](https://soporteenti.com/)
@@ -110,6 +112,10 @@ Si desea ejecutar este proyecto localmente en su máquina, siga estos pasos:
 
 
 2. Abra el archivo `index.html` en su navegador web para acceder a la página principal.
+
+## Vista Previa
+
+Si desea ver una vista del sitio, se encuentra desplegada en: https://8-bits.up.railway.app/
 
 ## Contribuciones
 
