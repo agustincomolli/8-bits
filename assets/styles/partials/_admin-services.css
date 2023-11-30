@@ -1,0 +1,96 @@
+.admin-services-main {
+  padding: 0 10%;
+}
+
+.services-section {
+  padding: 1rem .5rem;
+}
+
+.services-header {
+  background-color: var(--color-base-light);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+}
+
+.services-main {
+  padding-top: 1rem;
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.service-table th,
+.service-table td {
+  padding: 8px;
+  font: var(--font-paragraph-2);
+}
+
+.service-table-header {
+  background-color: var(--color-shadow-dark);
+  color: var(--color-base-light);
+}
+
+.service-name {
+  text-align: left;
+}
+
+.service-description {
+  text-align: justify;
+  padding-right: 1rem;
+  width: 60%;
+}
+
+.service-row {
+  vertical-align: top;
+}
+
+.service-row:nth-child(odd) {
+  background-color: var(--color-base-light);
+}
+
+.service-row:nth-child(even) {
+  background-color: var(--color-shadow-light);
+}
+
+.action-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.btn-crud {
+  background-color: var(--color-emphasis-3);
+  border-style: solid var(--color-emphasis-3);
+  cursor: pointer;
+  transition: var(--trans1, border-color .4s ease 0s, background-color .4s ease 0s);
+  align-self: end;
+  padding: .5rem .5rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-crud:hover {
+  background-color: var(--color-emphasis-1);
+}
+
+.btn-add {
+  padding-right: 1rem;
+  font-size: 0.875rem;
+}
+
+
+@media(min-width:824px) {
+  .services-main {
+    padding: 1rem 0;
+  }
+
+  .action-wrapper {
+    flex-direction: row;
+  }
+}
