@@ -86,7 +86,7 @@
 
 
 @media(min-width:824px) {
-  header {
+  .main-header {
     display: flex;
     flex-direction: row;
     padding: 1rem 10%;

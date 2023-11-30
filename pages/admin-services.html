@@ -6,7 +6,7 @@
 
   <title>8-bits | Administración</title>
   <!-- Icono -->
-  <link rel="shortcut icon" href="{{ url_for('static', filename='/assets/icons/favicon.webp') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/icons/favicon.webp" type="image/x-icon">
   <!-- CDN de Font Awesome -->
   <script src="https://kit.fontawesome.com/3e8f04180d.js" crossorigin="anonymous"></script>
   <!-- Estilos -->
@@ -48,7 +48,7 @@
       <header class="services-header">
         <h2>Servicios</h2>
         <div class="btn-wrapper">
-          <a href="/add-service">
+          <a href="./add-service.html">
             <button class="btn-crud btn-add" title="Agregar">
               <img src="../assets/icons/add.svg" alt="">
               <span>Agregar servicio</span>
@@ -66,7 +66,7 @@
                 <th class="service-table-header"></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="services-list">
 
               <tr class="service-row">
                 <td class="service-name">Diagnóstico y Resolución de Fallas</td>
@@ -208,207 +208,6 @@
                 </td>
               </tr>
 
-              <tr class="service-row">
-                <td class="service-name">Networking</td>
-                <td class="service-description">Mantén una conectividad sin interrupciones con nuestros servicios de
-                  chequeo, instalación y reparación de cableado de red y datos.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=8" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=8" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Instalación y Reparación de Sistemas Operativos</td>
-                <td class="service-description">Ya sea Windows, Mac o Linux, nuestros expertos pueden instalar y reparar
-                  sistemas operativos para garantizar un rendimiento óptimo.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=9" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=9" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Configuración y Mantenimiento de Servidores</td>
-                <td class="service-description">Asegura un flujo constante de datos y servicios con nuestra
-                  configuración y mantenimiento de servidores experto.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=10" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=10" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Instalación de Antivirus y Programas de Seguridad</td>
-                <td class="service-description">Protege tus sistemas con nuestra experiencia en la instalación,
-                  actualización y mantenimiento de antivirus y programas de seguridad.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=11" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=11" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Gestión de Redes y Sistemas</td>
-                <td class="service-description">Mantén tus redes y sistemas bajo control con nuestra gestión experta,
-                  garantizando una operación sin problemas.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=12" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=12" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Reparación de Computadoras y Notebooks</td>
-                <td class="service-description">Solucionamos problemas de hardware y software en tus computadoras y
-                  notebooks, devolviéndote equipos en perfectas condiciones de funcionamiento.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=13" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=13" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Backups de los Datos de tu Empresa</td>
-                <td class="service-description">Protege tus datos cruciales con nuestros servicios de copia de
-                  seguridad, asegurando que nunca se pierda información valiosa.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=14" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=14" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Asesoramiento y Consultoría</td>
-                <td class="service-description">Obtén orientación experta en tecnología y toma decisiones informadas
-                  para tu empresa con nuestro servicio de asesoramiento y consultoría.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=15" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=15" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Asesoramiento en Software Legal y Licenciamiento</td>
-                <td class="service-description">Cumple con las regulaciones y adquiere el software legal necesario con
-                  nuestra orientación en software legal y licenciamiento.</td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=16" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=16" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="service-row">
-                <td class="service-name">Soporte Remoto</td>
-                <td class="service-description">Obtén asistencia inmediata sin importar tu ubicación con nuestro soporte
-                  remoto a través de RustDesk, AnyDesk o Team Viewer. Nuestros expertos están a un clic de distancia.
-                </td>
-                <td>
-                  <div class="action-wrapper">
-                    <a href="/?id=17" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=17" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-
             </tbody>
           </table>
         </div>
@@ -443,5 +242,7 @@
 
   <!-- Scripts -->
   <script src="../assets/scripts/hamburger-menu.js"></script>
+  <script src="../assets/scripts/list-services.js"></script>
+  <script src="../assets/scripts/custom-alert.js"></script>
 </body>
 </html>
