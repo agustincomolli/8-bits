@@ -40,6 +40,10 @@
 
 .service-description {
   text-align: justify;
+  /* word-break: Indica si se pueden partir palabras de forma natural. */
+  word-break: break-word;
+  /* hyphens: Indica si se debe dividir las palabras por guiones. */
+  hyphens: auto;
   padding-right: 1rem;
   width: 60%;
 }
