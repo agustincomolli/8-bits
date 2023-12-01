@@ -34,11 +34,11 @@
   color: var(--color-base-light);
 }
 
-.service-name {
+.admin-service-name {
   text-align: left;
 }
 
-.service-description {
+.admin-service-description {
   text-align: justify;
   /* word-break: Indica si se pueden partir palabras de forma natural. */
   word-break: break-word;

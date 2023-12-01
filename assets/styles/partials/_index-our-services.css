@@ -25,7 +25,7 @@
   padding: 1rem 8%;
 }
 
-.services-title {
+.our-services-title {
   grid-area: grid-subtitle;
   font: var(--font-header-5);
   padding: 1rem 8%;
@@ -33,23 +33,23 @@
   align-items: center;
 }
 
-.services-title img {
+.our-services-title img {
   height: 3.5rem;
 }
 
-.services-list-col-1 {
+.our-services-list-col-1 {
   grid-area: grid-services-1;
   padding-left: 8%;
   width: 1fr;
 }
 
-.services-list-col-2 {
+.our-services-list-col-2 {
   grid-area: grid-services-2;
   padding-right: 8%;
   width: 1fr;
 }
 
-.services-item {
+.our-services-item {
   margin: 0;
   padding: 0;
 }
@@ -64,7 +64,7 @@
   text-transform: uppercase;
 }
 
-.services-guy {
+.our-services-guy {
   max-width: 100%;
 }
 
@@ -79,11 +79,11 @@
     width: 60%;
   }
 
-  .services-guy {
+  .our-services-guy {
     width: 40%;
   }
 
-  .services-guy img {
+  .our-services-guy img {
     max-width: 100%;
   }
 }

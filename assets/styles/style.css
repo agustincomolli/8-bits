@@ -23,9 +23,11 @@
 @import url("./partials/_plans.css");
 /* Estilos propios para services.html */
 @import url("./partials/_services.css");
-/* Estilos para admin-services.html */
+/* Estilos propios para login.html */
+@import url("./partials/_login.css");
+/* Estilos propios para admin-services.html */
 @import url("./partials/_admin-services.css");
-/* Estilos para add-service.html y para edit-service.html */
+/* Estilos propios para add-service.html y para edit-service.html */
 @import url("./partials/_add-edit-service.css");
 
 /* Estilos para animaciones */

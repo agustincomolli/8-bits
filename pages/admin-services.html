@@ -61,153 +61,268 @@
           <table class="service-table">
             <thead class="service-row">
               <tr>
-                <th class="service-name service-table-header">Nombre</th>
-                <th class="service-description service-table-header">Descripción</th>
+                <th class="admin-admin-service-name service-table-header">Nombre</th>
+                <th class="admin-admin-service-description service-table-header">Descripción</th>
                 <th class="service-table-header"></th>
               </tr>
             </thead>
             <tbody class="services-list">
-
               <tr class="service-row">
-                <td class="service-name">Diagnóstico y Resolución de Fallas</td>
-                <td class="service-description">Nuestros expertos identificarán y resolverán de manera eficiente
+                <td class="admin-admin-service-name">Diagnóstico y Resolución de Fallas</td>
+                <td class="admin-admin-service-description">Nuestros expertos identificarán y resolverán de manera eficiente
                   cualquier problema en tu equipo, manteniendo tus sistemas en pleno funcionamiento.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=1" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=1" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="1">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="1">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
               <tr class="service-row">
-                <td class="service-name">Instalación de Sistemas Operativos</td>
-                <td class="service-description">Deja que 8-bits se encargue de la instalación de sistemas operativos,
+                <td class="admin-service-name">Instalación de Sistemas Operativos</td>
+                <td class="admin-service-description">Deja que 8-bits se encargue de la instalación de sistemas operativos,
                   asegurando que todo esté configurado y listo para funcionar sin problemas.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=2" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=2" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="2">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="2">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
               <tr class="service-row">
-                <td class="service-name">Eliminación de Malware</td>
-                <td class="service-description">Mantén tu sistema libre de amenazas con nuestra eliminación de virus y
+                <td class="admin-service-name">Eliminación de Malware</td>
+                <td class="admin-service-description">Mantén tu sistema libre de amenazas con nuestra eliminación de virus y
                   spyware, protegiendo tus datos y tu privacidad.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=3" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=3" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="3">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="3">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
               <tr class="service-row">
-                <td class="service-name">Actualización de Sistema</td>
-                <td class="service-description">Mantén tu software actualizado y seguro con nuestras actualizaciones de
+                <td class="admin-service-name">Actualización de Sistema</td>
+                <td class="admin-service-description">Mantén tu software actualizado y seguro con nuestras actualizaciones de
                   sistema regulares, garantizando un rendimiento óptimo.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=4" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=4" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="4">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="4">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
               <tr class="service-row">
-                <td class="service-name">Limpieza Física de los Equipos</td>
-                <td class="service-description">Una limpieza física regular ayuda a prolongar la vida útil de tus
+                <td class="admin-service-name">Limpieza Física de los Equipos</td>
+                <td class="admin-service-description">Una limpieza física regular ayuda a prolongar la vida útil de tus
                   equipos y a mantenerlos funcionando sin problemas.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=5" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=5" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="5">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="5">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
               <tr class="service-row">
-                <td class="service-name">Instalación de Hardware</td>
-                <td class="service-description">Añade o reemplaza componentes de hardware con confianza, gracias a
+                <td class="admin-service-name">Instalación de Hardware</td>
+                <td class="admin-service-description">Añade o reemplaza componentes de hardware con confianza, gracias a
                   nuestros servicios de instalación de hardware.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=6" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=6" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="6">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="6">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
               <tr class="service-row">
-                <td class="service-name">Instalación y Configuración de Software</td>
-                <td class="service-description">Desde software empresarial hasta programas personalizados, te asistimos
+                <td class="admin-service-name">Instalación y Configuración de Software</td>
+                <td class="admin-service-description">Desde software empresarial hasta programas personalizados, te asistimos
                   en la instalación y configuración para satisfacer tus necesidades específicas.</td>
                 <td>
                   <div class="action-wrapper">
-                    <a href="/?id=7" title="Editar">
-                      <button class="btn-crud" title="Editar">
-                        <img src="../assets/icons/edit.svg" alt="">
-                      </button>
-                    </a>
-                    <a href="/?id=7" title="Eliminar">
-                      <button class="btn-crud" title="Eliminar">
-                        <img src="../assets/icons/delete.svg" alt="">
-                      </button>
-                    </a>
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="7">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="7">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
                   </div>
                 </td>
               </tr>
-
+              <tr class="service-row">
+                <td class="admin-service-name">Networking</td>
+                <td class="admin-service-description">Mantén una conectividad sin interrupciones con nuestros servicios de
+                  chequeo, instalación y reparación de cableado de red y datos.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="8">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="8">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Instalación y Reparación de Sistemas Operativos</td>
+                <td class="admin-service-description">Ya sea Windows, Mac o Linux, nuestros expertos pueden instalar y reparar
+                  sistemas operativos para garantizar un rendimiento óptimo.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="9">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="9">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Configuración y Mantenimiento de Servidores</td>
+                <td class="admin-service-description">Asegura un flujo constante de datos y servicios con nuestra
+                  configuración y mantenimiento de servidores experto.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="10">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="10">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Instalación de Antivirus y Programas de Seguridad</td>
+                <td class="admin-service-description">Protege tus sistemas con nuestra experiencia en la instalación,
+                  actualización y mantenimiento de antivirus y programas de seguridad.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="11">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="11">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Gestión de Redes y Sistemas</td>
+                <td class="admin-service-description">Mantén tus redes y sistemas bajo control con nuestra gestión experta,
+                  garantizando una operación sin problemas.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="12">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="12">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Reparación de Computadoras y Notebooks</td>
+                <td class="admin-service-description">Solucionamos problemas de hardware y software en tus computadoras y
+                  notebooks, devolviéndote equipos en perfectas condiciones de funcionamiento.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="13">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="13">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Backups de los Datos de tu Empresa</td>
+                <td class="admin-service-description">Protege tus datos cruciales con nuestros servicios de copia de
+                  seguridad, asegurando que nunca se pierda información valiosa.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="14">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="14">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Asesoramiento y Consultoría</td>
+                <td class="admin-service-description">Obtén orientación experta en tecnología y toma decisiones informadas
+                  para tu empresa con nuestro servicio de asesoramiento y consultoría.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="15">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="15">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Asesoramiento en Software Legal y Licenciamiento</td>
+                <td class="admin-service-description">Cumple con las regulaciones y adquiere el software legal necesario con
+                  nuestra orientación en software legal y licenciamiento.</td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="16">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="16">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="service-row">
+                <td class="admin-service-name">Soporte Remoto</td>
+                <td class="admin-service-description">Obtén asistencia inmediata sin importar tu ubicación con nuestro soporte
+                  remoto a través de RustDesk, AnyDesk o Team Viewer. Nuestros expertos están a un clic de distancia.
+                </td>
+                <td>
+                  <div class="action-wrapper">
+                    <button class="btn-edit btn-crud" title="Editar" data-service-id="17">
+                      <img src="../assets/icons/edit.svg" alt="Editar">
+                    </button>
+                    <button class="btn-delete btn-crud" title="Eliminar" data-service-id="17">
+                      <img src="../assets/icons/delete.svg" alt="Eliminar">
+                    </button>
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -242,7 +357,7 @@
 
   <!-- Scripts -->
   <script src="../assets/scripts/hamburger-menu.js"></script>
-  <script src="../assets/scripts/list-services.js"></script>
+  <script src="../assets/scripts/admin-services.js"></script>
   <script src="../assets/scripts/custom-alert.js"></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+.login-form {
+  padding: 20px !important; 
+  width: 80% !important;
+}
+
+
+@media(min-width:824px) {
+  .login-form {
+    padding: 40px !important;
+    width: 60% !important;
+  }
+}

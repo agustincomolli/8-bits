@@ -8,7 +8,8 @@
 .service-form {
   border: 2px solid var(--color-shadow-light);
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra opcional para darle un efecto elevado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra opcional para darle un efecto elevado */
   width: 100%;
   margin-bottom: 20px;
   display: flex;
@@ -29,10 +30,14 @@
   justify-content: end;
 }
 
+.hidden {
+  display: none;
+}
+
 
 @media(min-width:824px) {
   .service-form {
     padding: 20px;
-    width: 80%;  
+    width: 80%;
   }
 }
