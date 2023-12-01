@@ -2,7 +2,8 @@
  * URL base del servidor backend. Se utiliza para realizar solicitudes HTTP al
  * servidor, especificando la ruta base del API.
  */
-const URL = "http://localhost:5000";
+// const URL = "http://localhost:5000";
+const URL = "https://8-bits-backend.railway.internal";
 
 // Selecciona el formulario en el documento para manejar el evento de envío.
 const addForm = document.querySelector(".service-form");

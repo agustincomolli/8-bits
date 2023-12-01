@@ -1,7 +1,8 @@
 /**
  * URL base del servidor backend.
  */
-const URL = "http://localhost:5000";
+// const URL = "http://localhost:5000";
+const URL = "https://8-bits-backend.railway.internal";
 
 /**
  * Crea una fila de tabla HTML para cada servicio.
