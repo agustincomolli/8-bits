@@ -1,7 +1,8 @@
 /**
  * URL base del servidor backend que indica la ruta para realizar solicitudes al API.
  */
-const URL = "http://localhost:5000";
+// const URL = "http://localhost:5000";
+const URL = "8-bits-backend:5000";
 
 /**
  * Crea una tarjeta HTML con los datos de un servicio.
