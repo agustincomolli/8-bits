@@ -2,7 +2,7 @@
  * URL base del servidor backend que indica la ruta para realizar solicitudes al API.
  */
 // const URL = "http://localhost:5000";
-const URL = "https://8-bits-backend.railway.internal";
+const URL = "https://8-bits-backend-production.up.railway.app";
 
 /**
  * Crea una tarjeta HTML con los datos de un servicio.

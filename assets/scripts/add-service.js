@@ -3,7 +3,7 @@
  * servidor, especificando la ruta base del API.
  */
 // const URL = "http://localhost:5000";
-const URL = "https://8-bits-backend.railway.internal";
+const URL = "https://8-bits-backend-production.up.railway.app";
 
 // Selecciona el formulario en el documento para manejar el evento de envío.
 const addForm = document.querySelector(".service-form");
