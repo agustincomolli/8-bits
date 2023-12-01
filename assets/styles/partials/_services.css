@@ -42,6 +42,11 @@
 
 .service-description {
   font: var(--font-paragraph-2);
+  text-align: justify;
+  /* word-break: Indica si se pueden partir palabras de forma natural. */
+  word-break: break-word;
+  /* hyphens: Indica si se debe dividir las palabras por guiones. */
+  hyphens: auto;
   margin-block-end: 0;
 }
 
