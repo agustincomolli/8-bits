@@ -4,6 +4,46 @@
 // const URL = "http://localhost:5000";
 const URL = "https://8-bits-backend-production.up.railway.app";
 
+const btnCloseSession = document.querySelector(".close-session")
+
+/**
+ * Esta función maneja el evento de cierre de sesión.
+ * Realiza una petición al servidor para terminar la sesión y actualiza la interfaz de usuario.
+ *
+ * @param {Event} event - El evento que dispara la función.
+ */
+async function logout(event) {
+  // Previene el comportamiento por defecto del evento, que podría ser la recarga de la página.
+  event.preventDefault();
+
+  try {
+    // Realiza una solicitud POST al endpoint de logout del servidor.
+    const response = await fetch(URL + "/logout", {
+      method: "POST"
+    });
+
+    // Si la respuesta no es 'ok', lanza un error personalizado.
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    };
+
+    // Espera a que los datos de la respuesta estén disponibles en formato JSON.
+    const data = await response.json();
+
+    // Comprueba si el estado en la respuesta es "ok", que indica que el logout fue exitoso.
+    if (data.status == "ok") {
+      // Remueve el estado de la sesión del almacenamiento de la sesión del navegador.
+      sessionStorage.removeItem('isLoggedIn');
+      window.location.href = '../index.html';
+    };
+
+  } catch (error) {
+    // Captura y muestra errores en la consola si la solicitud falla.
+    console.error('Falló el cierre de sesión', error);
+  };
+};
+
+
 /**
  * Crea una fila de tabla HTML para cada servicio.
  * @param {Object} service - Objeto que contiene los detalles del servicio.
@@ -114,9 +154,16 @@ function addClickEventButtons() {
  * Delega event handler para los botones de eliminar.
  */
 document.addEventListener("DOMContentLoaded", () => {
-  getServices().then(() => {
-    // Asegurarse de que esto se llama después de que los servicios han sido 
-    // cargados y los botones de eliminar están presentes.
-    addClickEventButtons();
-  });
+  const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+  if (!isLoggedIn) {
+    // Redirige al login si no hay sesión
+    window.location.href = './login.html';
+  } else {
+    btnCloseSession.addEventListener("click", logout);
+    getServices().then(() => {
+      // Asegurarse de que esto se llama después de que los servicios han sido 
+      // cargados y los botones de eliminar están presentes.
+      addClickEventButtons();
+    });
+  };
 });

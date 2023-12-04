@@ -14,6 +14,13 @@
   padding: 0;
 }
 
+.close-session {
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .services-main {
   padding-top: 1rem;
 }

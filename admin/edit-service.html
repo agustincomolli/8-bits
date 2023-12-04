@@ -28,24 +28,25 @@
   <main class="admin-services-main">
     <section class="add-edit-service">
       <header class="service-title">
-        <h3>Iniciar Sesión</h3>
+        <h3>Editar un servicio</h3>
       </header>
       <main class="service-main">
-        <form class="service-form login-form" action="" method="post">
+        <form class="service-form hidden" action="" method="post">
           <div class="service-input-container">
-            <label for="login-user-name">Usuario:</label>
-            <input type="text" name="login-user-name" id="login-user-name" class="input" required>
+            <label for="input-service-name">Nombre del servicio:</label>
+            <input type="text" name="input-service-name" id="input-service-name" class="input">
           </div>
           <div class="service-input-container">
-            <label for="login-password">Contraseña:</label>
-            <input type="password" name="login-password" id="login-password" class="input" required>
+            <label for="input-service-description">Descripción:</label>
+            <textarea name="input-service-description" id="input-service-description" class="message"
+              cols="30" rows="5"></textarea>
           </div>
           <div class="service-button-container">
-            <button type="submit" id="btn-login" class="btn-crud btn-add">
-              <img src="../assets/icons/login.svg" alt="">
-              <span>Iniciar sesión</span>
+            <button type="submit" id="btn-service-save" class="btn-crud btn-add">
+              <img src="../assets/icons/save.svg" alt="">
+              <span>Guardar</span>
             </button>
-            <button type="button" id="btn-login-cancel" class="btn-crud btn-add">
+            <button type="button" id="btn-service-cancel" class="btn-crud btn-add">
               <img src="../assets/icons/cancel.svg" alt="">
               <span>Cancelar</span>
             </button>
@@ -55,7 +56,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="company-info">
       <div class="logo-text">
         <span class="brand">8-bits</span>
@@ -81,6 +82,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="../assets/scripts/login.js"></script>
+  <script src="../assets/scripts/edit-service.js"></script>
 </body>
 </html>

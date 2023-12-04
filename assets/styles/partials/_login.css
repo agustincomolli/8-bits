@@ -3,10 +3,19 @@
   width: 80% !important;
 }
 
+.login-error-message {
+  margin-block: 0;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
 
 @media(min-width:824px) {
   .login-form {
     padding: 40px !important;
     width: 60% !important;
+  }
+
+  .login-error-message {
+    padding-bottom: 40px;
   }
 }
