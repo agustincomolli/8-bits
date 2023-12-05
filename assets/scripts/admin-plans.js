@@ -45,23 +45,41 @@ async function logout(event) {
 
 
 /**
- * Crea una fila de tabla HTML para cada servicio.
- * @param {Object} service - Objeto que contiene los detalles del servicio.
+ * Formatea un número como un precio en formato de moneda argentina (ARS).
+ * 
+ * @param {number} price - El número que representa el precio a formatear.
+ * @returns {string} Una cadena de texto que representa el precio formateado con el símbolo de moneda argentina y un espacio después del signo de dólar.
+ */
+function formatPriceNumber(price) {
+  // Crear un nuevo objeto Intl.NumberFormat para configurar las opciones de formateo de moneda.
+  let formatter = new Intl.NumberFormat("es-AR", {
+    style: "currency", // Indicar que el estilo del formateo es de tipo 'moneda'.
+    currency: "ARS", // Establecer el tipo de moneda a Peso Argentino (ARS).
+    maximumFractionDigits: 0, // No mostrar dígitos decimales en el precio formateado.
+  });
+
+  let formattedNumber = formatter.format(price);
+
+  return formattedNumber;
+};
+
+
+/**
+ * Crea una fila de tabla HTML para cada plan de mantenimiento.
+ * @param {Object} plan - Objeto que contiene los detalles del plan.
  * @returns {string} Una cadena de texto que representa una fila de tabla en HTML.
  */
-function createRow(service) {
-  // Plantilla de fila de tabla con los datos del servicio y acciones de editar/eliminar.
+function createRow(plan) {
+  // Plantilla de fila de tabla con los datos del plan y acciones de editar.
   let tableRow = `
     <tr class="service-row">
-    <td class="admin-service-name">${service.name}</td>
-    <td class="admin-service-description">${service.description}</td>
+    <td class="admin-service-name plan-name">${plan.name}</td>
+    <td class="admin-service-description plan-price">${formatPriceNumber(plan.price)}</td>
     <td>
-      <div class="action-wrapper">
-        <button class="btn-edit btn-crud" title="Editar"  data-service-id=${service.id}>
+      <div class="action-wrapper plan-action-wrapper">
+        <button class="btn-edit btn-crud btn-edit-plan" title="Editar"  data-plan-id=${plan.id}>
           <img src="../assets/icons/edit.svg" alt="Editar">
-        </button>
-        <button class="btn-delete btn-crud" title="Eliminar" data-service-id=${service.id}>
-          <img src="../assets/icons/delete.svg" alt="Eliminar">
+          <span class="plan-update-label-btn">Actualizar valor</span>
         </button>
       </div>
     </td>
@@ -70,12 +88,12 @@ function createRow(service) {
 };
 
 /**
- * Obtiene los servicios del servidor y actualiza la tabla del DOM con los datos recibidos.
+ * Obtiene los planes del servidor y actualiza la tabla del DOM con los datos recibidos.
  */
-async function getServices() {
+async function getPlans() {
   try {
-    // Hacer una petición GET para obtener los servicios.
-    const response = await fetch(URL + "/services");
+    // Hacer una petición GET para obtener los planes.
+    const response = await fetch(URL + "/plans");
     // Lanzar un error si la respuesta no es satisfactoria.
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -83,9 +101,9 @@ async function getServices() {
     // Parsear la respuesta JSON recibida.
     const data = await response.json();
     let tableBody = "";
-    // Construir el cuerpo de la tabla agregando las filas de servicios.
-    data.forEach(service => {
-      tableBody += createRow(service)
+    // Construir el cuerpo de la tabla agregando las filas de los planes.
+    data.forEach(plan => {
+      tableBody += createRow(plan)
     })
     // Insertar el cuerpo de la tabla en el DOM.
     document.querySelector(".services-list").innerHTML = tableBody;
@@ -96,54 +114,16 @@ async function getServices() {
   }
 };
 
-/**
- * Envía una solicitud para eliminar un servicio al backend.
- * 
- * @param {number} serviceId - ID del servicio que se eliminará.
- */
-async function deleteService(serviceId) {
-  try {
-    const response = await fetch(URL + "/service/" + serviceId, {
-      method: "DELETE"
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    // Crea y muestra una alerta personalizada con los mensajes.
-    const alertTitle = "Eliminar servicio";
-    const alertMessage = "El servicio fue eliminado exitosamente. 🗑️";
-    const myAlert = new CustomAlert(alertTitle, alertMessage);
-    myAlert.showAlert();
-
-    // Actualizar esa lista de servicios.
-    getServices();
-
-  } catch (error) {
-    console.error('Error al eliminar el servicio:', error);
-    // Informar al usuario del error.
-    const alertTitle = "Eliminar servicio";
-    const alertMessage = "⚠️ Error al eliminar el servicio: " + error;
-    const myAlert = new CustomAlert(alertTitle, alertMessage);
-    myAlert.showAlert();
-  }
-}
 
 function addClickEventButtons() {
   // Selecciona el elemento padre (el tbody de la tabla con clase '.services-list')
   // y delega el evento 'click'.
   document.querySelector(".services-list").addEventListener("click", function (event) {
-    // Event delegation: Chequea si se hizo clic en el botón btn-delete.
-    if (event.target.closest(".btn-delete")) {
-      // Asumiendo que el botón de eliminar contiene una imagen
-      // y que el botón contiene el atributo data-service-id
-      const serviceId = event.target.closest(".btn-delete").dataset.serviceId;
-      deleteService(serviceId);
-    } else if (event.target.closest(".btn-edit")) {
-      const serviceId = event.target.closest(".btn-edit").dataset.serviceId;
-      // Redirige a la página para editar el servicio.
-      window.location.href = `./edit-service.html?id=${serviceId}`;
+    // Event delegation: Chequea si se hizo clic en el botón btn-edit.
+    if (event.target.closest(".btn-edit")) {
+      const planId = event.target.closest(".btn-edit").dataset.planId;
+      // Redirige a la página para editar el plan.
+      window.location.href = `./edit-plan.html?id=${planId}`;
     }
   });
 };
@@ -160,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = './login.html';
   } else {
     btnCloseSession.addEventListener("click", logout);
-    getServices().then(() => {
+    getPlans().then(() => {
       // Asegurarse de que esto se llama después de que los servicios han sido 
       // cargados y los botones de eliminar están presentes.
       addClickEventButtons();

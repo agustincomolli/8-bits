@@ -1,0 +1,36 @@
+.plan-update-label-btn {
+  display: none;
+}
+
+.plan-action-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-name {
+  /* width: 30%; */
+  padding-left: 1rem !important;
+}
+
+.plan-price {
+  width:40%;
+  text-align: right;
+  padding-right: 1.5rem !important;
+}
+
+@media(min-width:824px) {
+  .plan-table-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plan-table {
+    width: 60%;
+  }
+
+  .plan-update-label-btn {
+    display: initial;
+  }
+
+}
