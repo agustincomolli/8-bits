@@ -1,8 +1,8 @@
 /**
  * URL base del servidor backend.
  */
-const URL = "http://localhost:5000";
-// const URL = "https://8-bits-backend-production.up.railway.app";
+// const URL = "http://localhost:5000";
+const URL = "https://8-bits-backend-production.up.railway.app";
 
 const btnCloseSession = document.querySelector(".close-session")
 
