@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>8-bits | Administración</title>
+  <!-- Icono -->
+  <link rel="shortcut icon" href="../assets/icons/favicon.webp" type="image/x-icon">
+  <!-- CDN de Font Awesome -->
+  <script src="https://kit.fontawesome.com/3e8f04180d.js" crossorigin="anonymous"></script>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <!-- Logotipo -->
+    <div class="logo">
+      <img class="logo-image" src="../assets/images/logo.webp" alt="Logo">
+      <div class="logo-text">
+        <span class="brand">8-bits</span>
+        <span class="slogan">Tu aliado informático</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-services-main">
+    <section class="add-edit-service">
+      <header class="service-title">
+        <h3>Editar valor del plan</h3>
+      </header>
+      <main class="service-main">
+        <form class="service-form hidden" action="" method="post">
+          <div class="service-input-container">
+            <label for="input-plan-name">Nombre del plan:</label>
+            <input type="text" name="input-plan-name" id="input-plan-name" class="input" disabled>
+          </div>
+          <div class="service-input-container">
+            <label for="input-plan-description">Valor del plan:</label>
+            <input type="number" name="input-plan-price" id="input-plan-price" class="input">
+          </div>
+          <div class="service-button-container">
+            <button type="submit" id="btn-service-save" class="btn-crud btn-add">
+              <img src="../assets/icons/save.svg" alt="">
+              <span>Guardar</span>
+            </button>
+            <button type="button" id="btn-service-cancel" class="btn-crud btn-add">
+              <img src="../assets/icons/cancel.svg" alt="">
+              <span>Cancelar</span>
+            </button>
+          </div>
+        </form>
+      </main>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="company-info">
+      <div class="logo-text">
+        <span class="brand">8-bits</span>
+        <span class="slogan">Tu aliado informático</span>
+      </div>
+      <div class="company-contact">
+        <!-- Redes sociales -->
+        <div class="social-networks">
+          <a href="https://www.facebook.com/agustincomolli" title="Sígueme en Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/agustincomolli" title="Sígueme en Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/agustincomolli/" title="Sígueme en LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <span class="phone">Tel: 02220 - 860065</span>
+      </div>
+    </div>
+    <span class="webmaker">© 2023 - Creado por Agustín Comolli</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/scripts/edit-plan.js"></script>
+</body>
+</html>
