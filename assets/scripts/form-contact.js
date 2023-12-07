@@ -74,9 +74,9 @@ function validatePhone() {
         // Si el número de teléfono no es válido, establecer un mensaje de error personalizado.
         contactPhone.setCustomValidity("El número de teléfono no es válido");
     } else {
-        // Si el número de teléfono es válido, restablecer cualquier mensaje de error personalizado anterior.
+        // Restablecer cualquier mensaje de error personalizado anterior.
         contactPhone.setCustomValidity("");
-    }
+    };
 
     // Reportar la validez del campo, lo que puede mostrar el mensaje de error personalizado.
     contactPhone.reportValidity();
@@ -94,6 +94,12 @@ async function submitForm(event) {
 
     // Validar el número de teléfono.
     validatePhone();
+
+    // Si el número de teléfono no es válido, entonces detener la función aquí.
+    if (!isValidPhone(contactPhone.value)) {
+        contactPhone.reportValidity();
+        return; // Detiene la ejecución adicional si el teléfono no es válido.
+    }
 
     // Obtener los datos del formulario.
     const dataContact = new FormData(this);
@@ -132,10 +138,11 @@ formContact.addEventListener("submit", submitForm);
 // Establece un listener para el evento "change" en el elemento contactPhone
 // y restablece la validez personalizada del campo, lo que permite que el usuario
 // corrija y vuelva a validar el campo después de realizar cambios.
-contactPhone.addEventListener("change", () => {
+contactPhone.addEventListener("change", validatePhone);
+contactPhone.addEventListener('keydown', function (event) {
+    // Restablecer cualquier mensaje de error personalizado anterior.
     contactPhone.setCustomValidity("");
 });
-
 
 
 /* 
